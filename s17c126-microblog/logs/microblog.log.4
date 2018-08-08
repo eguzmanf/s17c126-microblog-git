@@ -1,0 +1,97 @@
+2018-07-02 17:53:18,081 INFO: Microblog startup [in C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s4c21-microblog\app\__init__.py:48]
+2018-07-02 18:07:37,349 INFO: Microblog startup [in C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s4c21-microblog\app\__init__.py:48]
+2018-07-03 21:03:35,263 INFO: Microblog startup [in C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s4c21-microblog\app\__init__.py:48]
+2018-07-03 21:03:52,613 INFO: Microblog startup [in C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s4c21-microblog\app\__init__.py:48]
+2018-07-03 21:09:29,469 INFO: Microblog startup [in C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s4c21-microblog\app\__init__.py:48]
+2018-07-03 21:28:53,882 INFO: Microblog startup [in C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s4c21-microblog\app\__init__.py:48]
+2018-07-03 21:35:56,314 INFO: Microblog startup [in C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s4c21-microblog\app\__init__.py:48]
+2018-07-03 21:37:12,117 INFO: Microblog startup [in C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s4c21-microblog\app\__init__.py:48]
+2018-07-05 21:59:59,738 INFO: Microblog startup [in C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s4c21-microblog\app\__init__.py:48]
+2018-07-05 22:08:10,390 INFO: Microblog startup [in C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s4c21-microblog\app\__init__.py:48]
+2018-07-05 22:09:49,963 INFO: Microblog startup [in C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s4c21-microblog\app\__init__.py:48]
+2018-07-05 22:13:33,416 INFO: Microblog startup [in C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s4c21-microblog\app\__init__.py:48]
+2018-07-05 22:15:01,830 INFO: Microblog startup [in C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s4c21-microblog\app\__init__.py:48]
+2018-07-05 22:22:06,435 INFO: Microblog startup [in C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s4c21-microblog\app\__init__.py:48]
+2018-07-05 22:31:06,230 INFO: Microblog startup [in C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s4c21-microblog\app\__init__.py:48]
+2018-07-05 23:02:27,606 INFO: Microblog startup [in C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s4c21-microblog\app\__init__.py:48]
+2018-07-05 23:03:30,905 ERROR: Exception on /follow/susan [GET] [in c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s4c21-microblog\app\routes.py", line 117, in follow
+    current_user.follow(user)
+  File "C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s4c21-microblog\app\models.py", line 51, in follow
+    if not self.is_following(user):
+  File "C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s4c21-microblog\app\models.py", line 59, in is_following
+    return self.followed.filter(followers.c.followed_id == user.id).count() > 0
+AttributeError: 'BaseQuery' object has no attribute 'id'
+2018-07-09 19:12:21,476 INFO: Microblog startup [in C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s9c63-microblog\app\__init__.py:48]
+2018-07-09 19:12:32,184 ERROR: Exception on /index [GET] [in c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s9c63-microblog\app\routes.py", line 29, in index
+    posts = current_user.followed_posts.all()
+AttributeError: 'function' object has no attribute 'all'
+2018-07-09 19:13:10,025 ERROR: Exception on /index [GET] [in c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s9c63-microblog\app\routes.py", line 29, in index
+    posts = current_user.followed_posts.all()
+AttributeError: 'function' object has no attribute 'all'
+2018-07-09 19:13:17,922 ERROR: Exception on /index [GET] [in c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s9c63-microblog\app\routes.py", line 29, in index
+    posts = current_user.followed_posts.all()
+AttributeError: 'function' object has no attribute 'all'

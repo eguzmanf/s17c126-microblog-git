@@ -1,0 +1,79 @@
+2018-07-09 19:20:39,858 ERROR: Exception on /index [GET] [in c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s9c63-microblog\app\routes.py", line 30, in index
+    return render_template('index.html', title='Home', form=form, posts=posts)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s9c63-microblog\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s9c63-microblog\app\templates\base.html", line 32, in top-level template code
+    {% block content %} {% endblock %}
+  File "C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s9c63-microblog\app\templates\index.html", line 10, in block "content"
+    {% for error in form.username.errors %}
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\jinja2\environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'app.forms.PostForm object' has no attribute 'username'
+2018-07-09 19:20:49,282 ERROR: Exception on /index [GET] [in c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s9c63-microblog\app\routes.py", line 30, in index
+    return render_template('index.html', title='Home', form=form, posts=posts)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s9c63-microblog\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s9c63-microblog\app\templates\base.html", line 32, in top-level template code
+    {% block content %} {% endblock %}
+  File "C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s9c63-microblog\app\templates\index.html", line 10, in block "content"
+    {% for error in form.username.errors %}
+  File "c:\users\eguzmanf\appdata\local\conda\conda\envs\flaskgrin\lib\site-packages\jinja2\environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'app.forms.PostForm object' has no attribute 'username'
+2018-07-09 19:21:30,730 INFO: Microblog startup [in C:\Users\eguzmanf\Google Drive\udemy-flask-mgrinberg\s9c63-microblog\app\__init__.py:48]
